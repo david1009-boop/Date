@@ -1,0 +1,112 @@
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:
+radial-gradient(circle at top left, rgba(255,0,76,0.35), transparent 35%),
+radial-gradient(circle at bottom right, rgba(255,0,76,0.25), transparent 35%),
+linear-gradient(135deg,#020202,#140000,#260008,#050505);
+font-family:Georgia,serif;
+overflow:hidden;
+color:white;
+}
+
+.sparkles::before{
+content:"✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦";
+position:absolute;
+top:30px;
+width:100%;
+text-align:center;
+font-size:22px;
+color:#ff4f7d;
+text-shadow:0 0 15px #ff0055;
+}
+
+.card{
+width:430px;
+padding:40px;
+border-radius:30px;
+text-align:center;
+background:rgba(15,0,5,0.88);
+border:1px solid rgba(255,70,120,0.45);
+box-shadow:
+0 0 25px rgba(255,0,76,0.8),
+0 0 60px rgba(255,0,76,0.4);
+}
+
+.hidden{
+display:none;
+}
+
+.icon{
+font-size:55px;
+margin-bottom:15px;
+}
+
+h1{
+color:#ff4f7d;
+font-size:34px;
+}
+
+p,label{
+color:#f8d7e3;
+}
+
+button{
+padding:15px 30px;
+margin:10px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-size:18px;
+}
+
+.yes{
+background:linear-gradient(45deg,#ff0055,#ff4f7d);
+color:white;
+}
+
+.yes:hover{
+transform:scale(1.08);
+}
+
+.no{
+background:#111;
+color:white;
+border:1px solid #ff4f7d;
+}
+
+input{
+width:100%;
+padding:15px;
+margin:10px 0;
+border-radius:15px;
+border:1px solid #ff4f7d;
+background:#090909;
+color:white;
+}
+
+.foods{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.foods button{
+background:rgba(255,0,85,0.12);
+color:white;
+border:1px solid #ff4f7d;
+}
+
+.result-box{
+margin:20px 0;
+padding:20px;
+border-radius:20px;
+background:rgba(255,255,255,0.05);
+}
